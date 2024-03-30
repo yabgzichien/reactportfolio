@@ -1,0 +1,11 @@
+.certificateContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    flex-direction: column;
+}
+
+.certificatesImg{
+    width: 40%;
+}

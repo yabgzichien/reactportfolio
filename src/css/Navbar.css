@@ -1,0 +1,60 @@
+.navBarContainer{
+    flex :  1;
+    background-color: rgb(43, 43, 43, 0.5);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+}
+
+.navBarButtonContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.navBarBtn{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    padding: 0 50px;
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(255, 255, 255,0.5);
+
+}
+
+.navBarBtn:hover{
+    transition: 0.3s;
+    color: white;
+}
+
+.navBarLogo{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.navBarNameContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.navBarNameContainer:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navBarBtn{
+        padding: 5px;
+    }
+    .navBarContainer{
+        padding: 0px;
+    }
+  }
