@@ -7,7 +7,7 @@ const Hero = () => {
     <div className='heroContainer'>
       <div className='heroHeader'>
         <h1 className='heroName' > Hi, I am Zi Chien </h1>
-        <p>a high school graduate from Malaysia</p>
+        <p>a student majoring in Data Science.</p>
       </div>
       <Computer />
     </div>

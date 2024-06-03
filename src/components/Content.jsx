@@ -7,6 +7,32 @@ const Content = () => {
 
   const data = [
     {
+      title: "Hewo",
+      img: "/hewo1.png",
+      img2: "/hewo2.png",
+      img3: "/hewo3.png",
+      img4: "/hewo.png",
+      desc: "LDR Journal",
+      link: "hw",
+      info1: "This web is specifically make for countering Long Distance Relationship(LDR). My girlfriend is going to UK to futher her studies and chasing her dreams. ",
+      info2: "There will be time difference, we wouldn't have time to talk also. Hence I created this webapp so that we could write our daily journal here to share our daily lives together.",
+      info3: "",
+
+    },
+    {
+      title: "Face ID Detection System",
+      img: "/faceid.jpg",
+      img2: "/faceid1.jpg",
+      img3: "/faceid2.jpg",
+      img4: "",
+      desc: "Face Detection System for Attendance",
+      link: "faceid",
+      info1: "This is a face id attendance system made using python, this project uses a third party library call face-attendance",
+      info2: "This app will detect user login and authenticate user using face id.",
+      info3: "",
+      github: "https://github.com/yabgzichien/faceattendance",
+    },
+    {
       title: "Kitchen Delight",
       img: "/kd.png",
       img2: "/kd2.png",
@@ -105,9 +131,12 @@ const Content = () => {
             </a>
           : null
         }
+        {
+          obj?.github ?
         <a className='contentLink' href={obj.github}>
             <p>GitHub Source Code</p> 
-        </a>
+        </a> : null
+        }
 
     </div>
   )
