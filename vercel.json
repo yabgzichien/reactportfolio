@@ -2,22 +2,22 @@
     "version": 2,
     "builds": [
       {
-        "src": "build/*",
-        "use": "@vercel/static-build"
+        "src": "dist/*",
+        "use": "@vercel/static-dist"
       }
     ],
     "routes": [
       {
         "src": "/(.*).(js|css)",
-        "dest": "/build/$1.$2"
+        "dest": "/dist/$1.$2"
       },
       {
         "src": "/(favicon.ico|robots.txt)",
-        "dest": "/build/$1"
+        "dest": "/dist/$1"
       },
       {
         "src": "/(.*)",
-        "dest": "/build/index.html"
+        "dest": "/dist/index.html"
       }
     ]
   }
