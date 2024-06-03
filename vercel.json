@@ -1,8 +1,24 @@
 {
-    "routes":[
-        {
-            "src": "/[^.]+",
-            "dest": []
-        }
+    "version": 2,
+    "builds": [
+      {
+        "src": "build/*",
+        "use": "@vercel/static-build"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*).(js|css)",
+        "dest": "/build/$1.$2"
+      },
+      {
+        "src": "/(favicon.ico|robots.txt)",
+        "dest": "/build/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/build/index.html"
+      }
     ]
-}
+  }
+  
