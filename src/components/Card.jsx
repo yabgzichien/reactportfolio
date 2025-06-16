@@ -18,7 +18,20 @@ const Card = ({ title, img, desc, link }) => {
     }
 
   return (
-    <Link to={`/work/${link}`}>
+
+    <>
+    {
+      link == "" ? 
+      <Tilt 
+          className='cardContainer'
+          options={Options}
+          >
+            <h2>{title}</h2>
+            <img className='cardImg' src={img} />
+            <p>{desc}</p>
+      </Tilt>:
+      
+        <Link to={`/work/${link}`}>
       <Tilt 
           className='cardContainer'
           options={Options}
@@ -28,6 +41,10 @@ const Card = ({ title, img, desc, link }) => {
             <p>{desc}</p>
       </Tilt>
     </Link>
+    }
+    
+    </>
+
   )
 }
 

@@ -6,6 +6,17 @@ const Certs = () => {
 
     const certificates = [
         {
+            title: "Udemy Machine Learning Course",
+            img: "./udemy.jpg",
+            link: "udemy"
+        },
+        {
+            title: "Goldsman Sachs Excel Skills For Business",
+            img: "./gsforage.png",
+            link: "gsforage"
+        },
+        
+        {
             title: "UEC Certificate",
             img: "./uec.jpg",
             link: "uec"

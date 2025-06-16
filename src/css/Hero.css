@@ -20,7 +20,7 @@
     box-shadow: 0px 0px 10px white;
     margin: 10px;
     border-radius: 10px;
-    border-image: linear-gradient(to right, rgb(151, 151, 255), rgb(212, 129, 254)) 1;
+    /* border-image: linear-gradient(to right, rgb(151, 151, 255), rgb(212, 129, 254)) 1; */
 }
 
 .heroName{

@@ -3,13 +3,22 @@ import Navbar from '../components/Navbar'
 import '../css/Certificate.css'
 
 import { useParams } from 'react-router-dom'
-import ReactImageMagnify from 'react-image-magnify';
 
 const Certificate = () => {
 
     const { params } = useParams()
 
     const certificates = [
+        {
+            title: "Udemy Machine Learning Course",
+            img: "/udemy.jpg",
+            link: "udemy"
+        },
+        {
+            title: "Goldsman Sachs Excel Skills For Business",
+            img: "/gsforage.png",
+            link: "gsforage"
+        },
         {
             title: "UEC Certificate",
             img: "/uec.jpg",

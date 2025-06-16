@@ -2,6 +2,8 @@ import React from 'react'
 import Hero from '../components/Hero'
 import About from '../components/About'
 import Certs from '../components/Certs'
+import Projects from '../components/Projects'
+import Skills from '../components/Skills'
 
 import { useRef } from 'react'
 
@@ -10,6 +12,7 @@ const Home = () => {
   const aboutRef = useRef(null)
   const certsRef = useRef(null)
   const heroRef = useRef(null)
+  const projectsRef = useRef(null)
 
   return (
     <div >
@@ -28,6 +31,15 @@ const Home = () => {
                 <button onClick={()=> certsRef.current?.scrollIntoView({ behavior: 'smooth' })} className='navBarBtn'>
                     Certificates
                 </button>
+
+                <button onClick={()=> projectsRef.current?.scrollIntoView({ behavior: 'smooth' })} className='navBarBtn'>
+                    Projects  
+                </button>
+
+                <a href="https://github.com/yabgzichien" className="navBarBtn">
+                  <img src="./github.png" className="githubLogo"  />
+                  Github
+                </a>
             </div>
 
         </div>
@@ -38,6 +50,14 @@ const Home = () => {
         <div ref={aboutRef}>
           <About />
         </div>
+        <div >
+          <Skills />
+        </div>
+
+        <div ref={projectsRef}>
+          <Projects />
+        </div>
+        
 
         <div ref={certsRef}>
           <Certs />

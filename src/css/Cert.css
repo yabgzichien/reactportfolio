@@ -1,8 +1,9 @@
 .certContainer{
     border: 3px solid;
     border-radius: 10px;
-    border-image: linear-gradient(to right, rgb(1, 36, 16), rgb(0, 37, 47)) 1;
-    box-shadow: 0px 0px 10px #6bffe6;
+    /* border-image: linear-gradient(to right, rgb(1, 36, 16), rgb(0, 37, 47)) 1; */
+    /* box-shadow: 0px 0px 10px #6bffe6; */
+    box-shadow: 0px 0px 10px #ffffff;
     cursor: pointer;
     display: flex;
     flex-direction: column;
